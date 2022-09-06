@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Roboto Thin", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ultrarare {
+  background: linear-gradient(120deg, #fbffca, #baffbf, #a7efff, #ffabff);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.superrare {
+  background: #ee9;
+}
+
+.elite {
+  background: #c4adff;
+}
+
+.rare {
+  background: #9fe8ff;
+}
+
+.normal {
+  background: #ccc;
+}
+
+.item {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  user-select: none;
 }
 
-.App-link {
-  color: #61dafb;
+.item-1 {
+  background: url("/public/media/wallpapers/Brest.png") 50% no-repeat azure;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-2 {
+  background: url("/public/media/wallpapers/Plymouth.png") 50% no-repeat azure;
 }
+
+.item-3 {
+  background: url("/public/media/wallpapers/Friedrich_der_Große.png") 50% no-repeat azure;
+}
+
+/*# sourceMappingURL=App.css.map */

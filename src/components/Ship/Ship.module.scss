@@ -1,0 +1,29 @@
+.ship {
+  display: flex;
+  flex-direction: column;
+    width: 400px;
+  padding: 10px;
+    box-shadow: 0 0 5px #ccc;
+  margin-bottom: 20px;
+    text-wrap: normal;
+
+  h1 {
+    margin-bottom: 20px;
+      border-bottom: #a7efff 2px solid;
+  }
+
+}
+
+.ship__icon {
+    width: 104px;
+    height: 104px;
+    padding: 4px;
+}
+
+
+
+.ship__description{
+  display: flex;
+    justify-content: space-between;
+  align-items: center;
+}

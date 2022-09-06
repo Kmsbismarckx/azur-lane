@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap');
+
+$rainbow: linear-gradient(0deg,rgba(44,44,44,.2),rgba(3,161,224,.6));
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Thin', sans-serif;
+}
+
+.ultrarare {
+    background: linear-gradient(120deg,#fbffca,#baffbf,#a7efff,#ffabff);
+}
+
+.superrare {
+    background: #ee9;
+}
+
+.elite {
+    background: #c4adff;
+}
+
+.rare {
+    background: #9fe8ff;
+}
+
+.normal {
+    background: #ccc;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.item-1 {
+    background: url("/public/media/wallpapers/Brest.png") 50% no-repeat azure;
+}
+
+.item-2 {
+    background: url("/public/media/wallpapers/Plymouth.png") 50% no-repeat azure;
+}
+
+.item-3 {
+    background: url("/public/media/wallpapers/Friedrich_der_Große.png") 50% no-repeat azure;
+}
+

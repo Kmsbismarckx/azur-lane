@@ -1,0 +1,10 @@
+.shipFilter {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter__item {
+    margin-right: 20px;flex-grow: 2;
+}

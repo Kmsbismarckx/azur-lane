@@ -133,3 +133,22 @@ body {
     display: flex !important;
   }
 }
+
+@media screen and (max-width: 1920px) {
+  .error__404 {
+    background-color: #95d2ca;
+    height: 100vh;
+    .error__404_image {
+      display: none;
+      height: 100%;
+      width: 100%;
+    }
+    .error__404_text {
+      width: 100%;
+      font-size: 400%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
-import Input from "../Input/Input";
 import Select from "../Select/Select";
 import classes from "./ShipFilter.module.css";
+import Input from "../Input/Input";
 
 const ShipFilter = ({ filter, setFilter }) => {
   return (
@@ -17,7 +17,6 @@ const ShipFilter = ({ filter, setFilter }) => {
           { value: "name", name: "По имени" },
           { value: "rarity", name: "По редкости" },
           { value: "type", name: "По классу" },
-          { value: "affiliation", name: "По национальности" },
         ]}
       />
       <Select
@@ -41,6 +40,7 @@ const ShipFilter = ({ filter, setFilter }) => {
         value={filter.query}
         onChange={(e) => setFilter({ ...filter, query: e.target.value })}
         placeholder="Поиск..."
+        className="search"
       />
     </div>
   );

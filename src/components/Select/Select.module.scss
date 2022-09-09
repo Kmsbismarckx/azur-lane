@@ -1,4 +1,61 @@
 .select {
-    width: 200px;
-    height: 25px;
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    background: azure;
+    overflow: hidden;
+    border-radius: .25em;
+    margin-right: 25px;
+    line-height: 3;
+    flex: 1;
+    select {
+        font-family: 'Josefin Sans', sans-serif;
+        width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        border: 1px solid darken(azure, 10%);
+        font-weight: bold;
+        outline:0;
+        box-shadow:none;
+        appearance: none;
+        background: azure none;
+        cursor: pointer;
+        padding: .5em;
+
+        option {
+            background: lighten(azure, 10%);
+        }
+    }
+    select::-ms-expand {
+        display: none;
+    }
+    select:focus {
+        outline: none;
+        background: darken(azure, 10%);
+    }
+
+}
+.select::after {
+     content: '\25BC';
+     position: absolute;
+     color: white;
+     top: 0;
+     right: 0;
+     padding: 0 1em;
+     background: #2b2e2e;
+     cursor:pointer;
+     transition:.25s all ease;
+     pointer-events: none;
+ }
+
+.select:hover::after {
+    color: darken(azure, 30%);
+}
+
+@media screen and (max-width: 728px) {
+    .select {
+        margin-bottom: 20px;
+    }
 }

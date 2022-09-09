@@ -1,7 +1,11 @@
 import React from "react";
 import classes from "./Ship.module.css";
 
-const Ship = ({ ship }) => {
+const Ship = ({ ship, onClick, setCurrentShip }) => {
+  console.log(ship);
+  let shipImgURL =
+    process.env.PUBLIC_URL +
+    `/media/prototypes/${ship.name.toLowerCase()}icon.png`;
   return (
     <li id={ship.id} className={classes.ship}>
       <h1>{ship.name}</h1>
@@ -9,20 +13,28 @@ const Ship = ({ ship }) => {
         <img
           className={
             classes.ship__icon +
-            " " +
+            " ship__img " +
             ship.rarity.toLowerCase().split(/\s+/).join("")
           }
-          src={
-            process.env.PUBLIC_URL +
-            `/media/prototypes/${ship.name.toLowerCase()}icon.png`
-          }
+          src={shipImgURL}
           alt={ship.name}
+          onClick={() => {
+            onClick();
+            setCurrentShip({
+              name: ship.name,
+              imgURL: shipImgURL,
+              type: ship.type,
+              rarity: ship.rarity,
+              affiliation: ship.affiliation,
+              fp: ship.stats.fp,
+              hp: ship.stats.hp,
+              aa: ship.stats.aa,
+              ms: ship.stats.ms,
+              avi: ship.stats.avi,
+              trp: ship.stats.trp,
+            });
+          }}
         />
-        <div>
-          <p>{ship.rarity}</p>
-          <p>{ship.type}</p>
-          <p>{ship.affiliation}</p>
-        </div>
       </div>
     </li>
   );

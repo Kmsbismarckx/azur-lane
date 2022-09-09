@@ -1,29 +1,33 @@
 .ship {
   display: flex;
   flex-direction: column;
-    width: 400px;
+  align-items: center;
+  width: 200px;
   padding: 10px;
-    box-shadow: 0 0 5px #ccc;
-  margin-bottom: 20px;
-    text-wrap: normal;
+  text-wrap: normal;
 
   h1 {
+    display: flex;
+    align-items: center;
+    height: 90px;
     margin-bottom: 20px;
-      border-bottom: #a7efff 2px solid;
+    border-bottom: #a7efff 2px solid;
+    text-align: center;
   }
 
 }
 
 .ship__icon {
-    width: 104px;
-    height: 104px;
-    padding: 4px;
+  width: 104px;
+  height: 104px;
+  padding: 4px;
+  cursor: pointer;
 }
 
 
 
 .ship__description{
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
 }

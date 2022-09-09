@@ -6,12 +6,18 @@
       "rarity": "Ultra Rare",
       "type": "Light Cruiser",
       "affiliation": "Royal Navy",
-      "fp": 194,
-      "hp": 5553,
-      "aa": 334,
-      "ms": 100,
-      "avi": 0,
-      "trp": 391
+      "stats": {
+        "fp": 194,
+        "hp": 5553,
+        "aa": 334,
+        "ms": 100,
+        "avi": 0,
+        "trp": 391
+      },
+      "skills": {
+        "Rejoice in Radiance": "When the battle starts, increases this ship's FP and ACC by 4.5% (12%). If sortied with another Royal Navy ship, or if this ship has Royal Navy gear equipped: increases this ship's EVA by 5% (15%).",
+        "Pathfinder's Shroud": "Every 10s: fires a special barrage (DMG is based on the skill's level) and becomes Shrouded for 5s (while Shrouded, this ship takes 1% (10%) less DMG; upon becoming Shrouded for the 3rd time, she also restores 4% (10%) of her max HP). Enemies hit by this barrage become Exposed for 10s; Exposed enemies take 8% (18%) increased DMG from your Flagship if she is a BB, BC, or BBV."
+      }
     },
     {
       "id": 20024,
@@ -19,12 +25,18 @@
       "rarity": "Super Rare",
       "type": "Battlecruiser",
       "affiliation": "Iron Blood",
-      "fp": 371,
-      "hp": 8473,
-      "aa": 319,
-      "ms": 39,
-      "avi": 0,
-      "trp": 298
+      "stats": {
+        "fp": 371,
+        "hp": 8473,
+        "aa": 319,
+        "ms": 39,
+        "avi": 0,
+        "trp": 298
+      },
+      "skills": {
+        "Lindwurm - Devouring Fang": "During battle, this ship gains a Lv.1 (Lv.10) special Secondary Gun; every 5 times she fires this Secondary Gun: launches a Lv.1 (Lv.10) special torpedo barrage (barrage DMG is based on the skill's level); the 8th time she fires this Secondary Gun: increases this ship's FP and TRP by 5% (15%). ",
+        "Lindwurm - Protector's Oculus": "When the battle starts, if this ship is your Flagship: decreases this ship's DMG taken by 5% (15%); if NOT your Flagship, decreases DMG taken by the ship above your Flagship by 3.5% (8%). When this ship fires her Main Guns: 50% (80%) chance to fire a special barrage (DMG is based on the skill's level). "
+      }
     },
     {
       "id": 20025,

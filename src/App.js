@@ -1,43 +1,35 @@
 import "./App.css";
-import standartShipsData from "./standartShips.json";
-import prototypeShipsData from "./prototypeShips.json";
-import ShipList from "./components/ShipList/ShipList";
-import { useState } from "react";
-import { useShips } from "./hooks/useShips";
-import Slider from "./components/Slider/Slider";
+import React, { useContext, useEffect, useState } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
+import About from "./pages/About";
+import Ships from "./pages/Ships";
 import Header from "./components/Header/Header";
+import Error from "./pages/Error";
 
 function App() {
-  const standartShips = standartShipsData["standart ships"];
-  const prototypeShips = prototypeShipsData["prototypes"];
-  const [ships, setShips] = useState(prototypeShips);
-
-  const [filter, setFilter] = useState({
-    sort: "",
-    query: "",
-    type: "",
-  });
-
-  const sortedAndSearchedShips = useShips(
-    ships,
-    filter.sort,
-    filter.query,
-    filter.type
-  );
-
+  function Redirect({ to }) {
+    let navigate = useNavigate();
+    useEffect(() => {
+      navigate(to);
+    }, []);
+    return null;
+  }
   return (
-    <div className="App">
-      <Header />
-      <Slider>
-        <div className="item item-1"></div>
-        <div className="item item-2"></div>
-        <div className="item item-3"></div>
-      </Slider>
-      <ShipList
-        ships={sortedAndSearchedShips}
-        filter={filter}
-        setFilter={setFilter}
-      />
+    <div>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/ships" element={<Ships />} />
+          <Route path="/error" element={<Error />} />
+          <Route path="*" element={<Redirect to="/error" />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

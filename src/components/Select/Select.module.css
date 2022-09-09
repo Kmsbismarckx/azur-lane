@@ -1,6 +1,63 @@
+@charset "UTF-8";
 .select {
-  width: 200px;
-  height: 25px;
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  background: azure;
+  overflow: hidden;
+  border-radius: 0.25em;
+  margin-right: 25px;
+  line-height: 3;
+  flex: 1;
+}
+.select select {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  border: 1px solid #bdffff;
+  font-weight: bold;
+  outline: 0;
+  box-shadow: none;
+  appearance: none;
+  background: azure none;
+  cursor: pointer;
+  padding: 0.5em;
+}
+.select select option {
+  background: white;
+}
+.select select::-ms-expand {
+  display: none;
+}
+.select select:focus {
+  outline: none;
+  background: #bdffff;
+}
+
+.select::after {
+  content: "▼";
+  position: absolute;
+  color: white;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #2b2e2e;
+  cursor: pointer;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+
+.select:hover::after {
+  color: #57ffff;
+}
+
+@media screen and (max-width: 728px) {
+  .select {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=Select.module.css.map */

@@ -3,7 +3,7 @@ import Ship from "../Ship/Ship";
 import classes from "./ShipList.module.css";
 import ShipFilter from "../ShipFilter/ShipFilter";
 
-const ShipList = ({ ships, filter, setFilter }) => {
+const ShipList = ({ ships, filter, setFilter, onClick, setCurrentShip }) => {
   if (!ships.length) {
     return (
       <div className={classes.ship__list_wrapper}>
@@ -22,7 +22,12 @@ const ShipList = ({ ships, filter, setFilter }) => {
       <ShipFilter filter={filter} setFilter={setFilter} />
       <ul className={classes.ship__list}>
         {ships.map((ship) => (
-          <Ship key={ship.id} ship={ship} />
+          <Ship
+            key={ship.id}
+            ship={ship}
+            onClick={onClick}
+            setCurrentShip={setCurrentShip}
+          />
         ))}
       </ul>
     </div>

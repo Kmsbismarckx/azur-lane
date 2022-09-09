@@ -2,16 +2,19 @@ import { useMemo } from "react";
 
 export const useSortedShips = (ships, sort, type) => {
   const sortedShips = useMemo(() => {
-    if (sort === "rarity") {
-      return [...ships].sort((a, b) => b[sort].localeCompare(a[sort]));
-    } else if (type) {
-      return ships.filter((ship) => {
+    let shipsCopy = [...ships];
+    if (sort) {
+      shipsCopy.sort((a, b) => a[sort].localeCompare(b[sort]));
+      if (sort === "rarity") {
+        shipsCopy.reverse();
+      }
+    }
+    if (type) {
+      shipsCopy = shipsCopy.filter((ship) => {
         return ship.type.toLowerCase().includes(type.toLowerCase());
       });
-    } else if (sort) {
-      return [...ships].sort((a, b) => a[sort].localeCompare(b[sort]));
     }
-    return ships;
+    return shipsCopy;
   }, [sort, ships, type]);
   return sortedShips;
 };

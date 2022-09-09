@@ -11,6 +11,7 @@ const Slider = ({ children }) => {
   const handleLeftArrowClick = () => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset + PAGE_WIDTH;
+      console.log(newOffset);
       return Math.min(newOffset, 0);
     });
   };
@@ -18,8 +19,12 @@ const Slider = ({ children }) => {
   const handleRightArrowClick = () => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset - PAGE_WIDTH;
-
       const maxOffset = -(PAGE_WIDTH * (pages.length - 1));
+
+      if (newOffset < maxOffset) {
+        console.log(1);
+        return 0;
+      }
 
       return Math.max(newOffset, maxOffset);
     });

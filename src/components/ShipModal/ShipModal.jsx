@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import classes from "./ShipModal.module.css";
+import ShipDetail from "../ShipDetail/ShipDetail";
+import { Link } from "react-router-dom";
+import { HeaderContext } from "../../context";
 
 const MyModal = ({ visible, setVisible, currentShip }) => {
+  const urlPreFix = process.env.PUBLIC_URL;
   const rootClasses = [classes.shipModal];
+
+  const { aboutShips, setAboutShip } = useContext(HeaderContext);
+
   if (visible) {
     rootClasses.push(classes.shipModalActive);
   }
+
   return (
     <div
       className={rootClasses.join(" ")}
@@ -17,88 +25,108 @@ const MyModal = ({ visible, setVisible, currentShip }) => {
         className={classes.shipModalContent}
         onClick={(event) => event.stopPropagation()}
       >
-        <div className={classes.ship}>
-          <div className={classes.ship__main}>
-            <h1 className={classes.ship__name}>{currentShip.name}</h1>
-            <img
-              className={
-                classes.ship__img +
-                  " ship__img " +
-                  currentShip.rarity.toLowerCase().split(/\s+/).join("") ||
-                classes.ship__img
-              }
-              src={currentShip.imgURL}
-              alt=""
-            />
-          </div>
-          <div className={classes.ship__side}>
-            <div className={classes.ship__side_details}>
-              <h1 className={classes.side__name}>Ship details</h1>
-              <p>Редкость: {currentShip.rarity}</p>
-              <p>Класс: {currentShip.type}</p>
-              <p>Национальность: {currentShip.affiliation}</p>
+        <div>
+          <div className={classes.ship}>
+            <div className={classes.ship__main}>
+              <h1 className={classes.ship__name}>{currentShip.name}</h1>
+              <img
+                className={
+                  classes.ship__img +
+                    " ship__img " +
+                    currentShip.rarity.toLowerCase().split(/\s+/).join("") ||
+                  classes.ship__img
+                }
+                src={currentShip.imgURL}
+                alt=""
+              />
             </div>
-            <div className={classes.ship__side_stats}>
-              <h1 className={classes.stats__name}>Stats</h1>
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/media/stats/fp.png"}
-                  alt=""
-                  width={25}
-                  height={25}
-                />
-                FP: {currentShip.fp}
-              </p>
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/media/stats/hp.png"}
-                  alt=""
-                  width={25}
-                  height={25}
-                />
-                HP: {currentShip.hp}
-              </p>
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/media/stats/aa.png"}
-                  alt=""
-                  width={25}
-                  height={25}
-                />
-                AA: {currentShip.aa}
-              </p>
-              <p>MS: {currentShip.ms}</p>
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/media/stats/avi.png"}
-                  alt=""
-                  width={25}
-                  height={25}
-                />
-                AVI: {currentShip.avi}
-              </p>
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/media/stats/trp.png"}
-                  alt=""
-                  width={25}
-                  height={25}
-                />
-                TRP: {currentShip.trp}
-              </p>
+            <div className={classes.ship__side}>
+              <div className={classes.ship__side_details}>
+                <h1 className={classes.side__name}>Ship details</h1>
+                <div className={classes.side__name_description}>
+                  <p>Редкость: {currentShip.rarity}</p>
+                  <ShipDetail
+                    name="Класс"
+                    urlPreFix={urlPreFix}
+                    currentShip={currentShip}
+                    prop="type"
+                  />
+                  <ShipDetail
+                    name="Национальность"
+                    urlPreFix={urlPreFix}
+                    currentShip={currentShip}
+                    prop="affiliation"
+                  />
+                </div>
+              </div>
+              <div className={classes.ship__side_stats}>
+                <h1 className={classes.stats__name}>Stats</h1>
+                <p>
+                  <img
+                    src={urlPreFix + "/media/stats/fp.png"}
+                    alt=""
+                    width={25}
+                    height={25}
+                  />
+                  {currentShip.fp}
+                </p>
+                <p>
+                  <img
+                    src={urlPreFix + "/media/stats/hp.png"}
+                    alt=""
+                    width={25}
+                    height={25}
+                  />
+                  {currentShip.hp}
+                </p>
+                <p>
+                  <img
+                    src={urlPreFix + "/media/stats/aa.png"}
+                    alt=""
+                    width={25}
+                    height={25}
+                  />
+                  {currentShip.aa}
+                </p>
+                <p>
+                  <img
+                    src={urlPreFix + "/media/stats/ms.png"}
+                    alt=""
+                    width={25}
+                    height={25}
+                  />
+                  {currentShip.ms}
+                </p>
+                <p>
+                  <img
+                    src={urlPreFix + "/media/stats/avi.png"}
+                    alt=""
+                    width={25}
+                    height={25}
+                  />
+                  {currentShip.avi}
+                </p>
+                <p>
+                  <img
+                    src={urlPreFix + "/media/stats/trp.png"}
+                    alt=""
+                    width={25}
+                    height={25}
+                  />
+                  {currentShip.trp}
+                </p>
+              </div>
             </div>
           </div>
           <div>
-            {/*TODO*/}
-            {/*<a*/}
-            {/*  href={*/}
-            {/*    "https://azurlane.koumakan.jp/wiki/" +*/}
-            {/*    currentShip.name.split(" ").join("_")*/}
-            {/*  }*/}
-            {/*  target="_blank"*/}
-            {/*>*/}
-            {/*  WIKI*/}
-            {/*</a>*/}
+            <Link
+              to="/about"
+              onClick={() => {
+                return setAboutShip({ ...currentShip });
+              }}
+            >
+              About
+            </Link>
           </div>
         </div>
       </div>

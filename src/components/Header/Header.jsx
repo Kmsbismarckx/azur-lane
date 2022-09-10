@@ -10,20 +10,16 @@ const Header = () => {
     <div className={classes.header}>
       <div className={classes.logo}>
         <Link to="/ships">
-          <img src={process.env.PUBLIC_URL + `/media//site__icon.png`} alt="" />
+          <img
+            src={process.env.PUBLIC_URL + `/media/site__icon.png`}
+            alt="Azurlane"
+          />
         </Link>
       </div>
 
       <Navbar />
       {active && (
         <div className={classes.nav__links}>
-          <Link
-            className={classes.nav__link}
-            to="/About"
-            onClick={() => setActive(false)}
-          >
-            About
-          </Link>
           <Link
             className={classes.nav__link}
             to="/Ships"

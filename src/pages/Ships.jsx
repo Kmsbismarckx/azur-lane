@@ -1,5 +1,4 @@
-import { useState } from "react";
-import Header from "../components/Header/Header";
+import { useContext, useState } from "react";
 import Slider from "../components/Slider/Slider";
 import ShipList from "../components/ShipList/ShipList";
 import ShipModal from "../components/ShipModal/ShipModal";
@@ -9,18 +8,13 @@ import prototypeShipsData from "../prototypeShips.json";
 import { HeaderContext } from "../context";
 
 function Ships() {
-  const prototypeShips = prototypeShipsData["prototypes"];
-  const [ships, setShips] = useState(prototypeShips);
+  const { ships, setShips } = useContext(HeaderContext);
 
   const [filter, setFilter] = useState({
     sort: "",
     query: "",
     type: "",
   });
-
-  // function setFilterWrap(args) {
-  //   setFilter({ ...filter, ...args });
-  // }
 
   const sortedAndSearchedShips = useShips(
     ships,

@@ -1,63 +1,70 @@
 .shipModal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: none;
-    background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .shipModalContent {
-    padding: 25px;
-    background: white;
-    border-radius: 16px;
-    min-width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  min-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .shipModalActive {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ship {
+  display: flex;
+  .ship__main {
     display: flex;
-    .ship__main {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    .ship__name {
+      margin-bottom: 20px;
+    }
+    .ship__img {
+      padding: 4px;
+    }
+  }
+  .ship__side {
+    display: flex;
+    .ship__side_details {
+      display: flex;
+      flex-direction: column;
+      margin-right: 50px;
+      .side__name {
+        margin-bottom: 20px;
+      }
+      .side__name_description {
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        align-items: center;
-        margin-right: 50px;
-        .ship__name {
-            margin-bottom: 20px;
-        }
-        .ship__img {
-            padding: 4px;
-        }
+        height: 100%;
+      }
     }
-    .ship__side {
+    .ship__side_stats {
+      display: flex;
+      flex-direction: column;
+      .stats__name {
+        margin-bottom: 20px;
+      }
+
+      p {
         display: flex;
-        .ship__side_details {
-            display: flex;
-            flex-direction: column;
-            margin-right: 50px;
-            .side__name {
-                margin-bottom: 20px;
-            }
-        }
-        .ship__side_stats {
-            display: flex;
-            flex-direction: column;
-            .stats__name {
-                margin-bottom: 20px;
-            }
-            p {
-                display: flex;
-                align-items: center;
-            }
-        }
+        align-items: center;
+      }
     }
+  }
 }

@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./Ship.module.css";
 
 const Ship = ({ ship, onClick, setCurrentShip }) => {
-  console.log(ship);
   let shipImgURL =
     process.env.PUBLIC_URL +
     `/media/prototypes/${ship.name.toLowerCase()}icon.png`;
@@ -32,6 +31,7 @@ const Ship = ({ ship, onClick, setCurrentShip }) => {
               ms: ship.stats.ms,
               avi: ship.stats.avi,
               trp: ship.stats.trp,
+              skills: ship.skills,
             });
           }}
         />

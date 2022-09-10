@@ -44,12 +44,18 @@
       "rarity": "Super Rare",
       "type": "Light Cruiser",
       "affiliation": "Dragon Empery",
-      "fp": 150,
-      "hp": 3583,
-      "aa": 406,
-      "ms": 183,
-      "avi": 0,
-      "trp": 363
+      "stats": {
+        "fp": 150,
+        "hp": 3583,
+        "aa": 406,
+        "ms": 183,
+        "avi": 0,
+        "trp": 363
+      },
+      "skills": {
+        "Impactful Torpedoes": "This ship takes 10% less DMG from Torpedoes. Increases armor modifier against Heavy armor with this ship's equipped torpedoes by 10% (20%), and increases the torpedo and missile DMG dealt by Dragon Empery Destroyers and Guided-missile Destroyers in the fleet by 4.5% (12%). When this ship fires her torpedoes: creates a smokescreen for 3s that increases Evasion Rate by 15% (35%) and decreases DMG taken from enemy aircraft by 15% (35%) for all your ships inside it (this effect does not stack with \"Smokescreen: Light Cruisers\"); After 3s, 50% (100%) chance to launch an additional wave of torpedoes and trigger this smokescreen effect again.",
+        "Blazing Battledance": "Every 20s: 50% (100%) chance to launch a special barrage (DMG is based on the skill's level). When this ship takes DMG: 20% chance to increase this ship's FP and AA by 1% (4%) and TRP by 1.5% (5%) (can be stacked up to 3 times)."
+      }
     },
     {
       "id": 20026,
@@ -57,12 +63,18 @@
       "rarity": "Super Rare",
       "type": "Aircraft Carrier",
       "affiliation": "Northern Parliament",
-      "fp": 0,
-      "hp": 6284,
-      "aa": 321,
-      "ms": 47,
-      "avi": 436,
-      "trp": 0
+      "stats": {
+        "fp": 0,
+        "hp": 6284,
+        "aa": 321,
+        "ms": 47,
+        "avi": 436,
+        "trp": 0
+      },
+      "skills": {
+        "Aviation Experiment - Coordinated Bombardment": "When the battle starts, increases this ship's AVI and RLD by 5% (15%). When this ship launches an airstrike: launches an additional Lv.1 (Lv.10) special airstrike (DMG is based on the skill's level; 50% (80%) chance on launch to improve this special airstrike).",
+        "Contingency Experiment - Suppressive Fire": "Increase this ship's armor modifier against Medium and Heavy armor by 1% (10%). When this ship's airstrike finishes loading: fires a special barrage that decreases the AA of enemies hit by 10% (barrage DMG is based on the skill's level; AA debuff cannot be stacked)."
+      }
     },
     {
       "id": 20027,
@@ -70,12 +82,19 @@
       "rarity": "Ultra Rare",
       "type": "Large Cruiser",
       "affiliation": "Iris Libre",
-      "fp": 299,
-      "hp": 7354,
-      "aa": 254,
-      "ms": 50,
-      "avi": 0,
-      "trp": 0
+      "start": {
+        "fp": 299,
+        "hp": 7354,
+        "aa": 254,
+        "ms": 50,
+        "avi": 0,
+        "trp": 0
+      },
+      "skills": {
+        "Ensemble of Exultation": "Increases this ship's FP and ACC by 1% (10%). When the battle starts, if there are 3 ships in your Vanguard: increases this ship's EVA by 5% (15%) and decreases her DMG taken by 4.5% (12%).",
+        "Aria of Alacrity": "When the battle starts, increases this ship's SPD by 3 and EVA by 1% (10%). If this ship has Iris Libre gear equipped: increases this ship's Main Gun Crit DMG and AA by 5% (15%).",
+        "Panacea's Paean": "Once every 8 times this ship fires her Main Guns: fires a Lv.1 (Lv.10) special barrage (DMG is based on the skill's level); if this ship's Main Gun is large-caliber: decreases the number of shots required to 4 and changes the properties of this barrage. The 1st time this barrage fires every battle: restores 3.5% (8%) max HP to the ship with the lowest percentage HP left in your fleet; the 2nd time this barrage fires: restores 1.5% (6%) of this ship's max HP."
+      }
     },
     {
       "id": "Plan001",
@@ -83,12 +102,19 @@
       "rarity": "Super Rare",
       "type": "Light Cruiser",
       "affiliation": "Royal Navy",
-      "fp": 172,
-      "hp": 4637,
-      "aa": 363,
-      "ms": 98,
-      "avi": 0,
-      "trp": 352
+      "stats": {
+        "fp": 172,
+        "hp": 4637,
+        "aa": 363,
+        "ms": 98,
+        "avi": 0,
+        "trp": 352
+      },
+      "skills": {
+        "MKV-Class AP Shells": "Increases own AP damage dealt by 15% (35%).",
+        "(Fate Simulation) MKV-Class AP Shells+": "Increases own AP damage dealt by 20% (40%).\n(Replaces \"MKV-Class AP Shells\") ",
+        "Goddess of the Sea": "When own Health falls below 20%, recovers 15% (25%) of max Health and increases own Reload by 30% until the end of the battle. Can only occur once per battle. "
+      }
     },
     {
       "id": "Plan002",
@@ -96,12 +122,19 @@
       "rarity": "Super Rare",
       "type": "Battleship",
       "affiliation": "Royal Navy",
-      "fp": 423,
-      "hp": 7967,
-      "aa": 230,
-      "ms": 35,
-      "avi": 0,
-      "trp": 0
+      "stats": {
+        "fp": 423,
+        "hp": 7967,
+        "aa": 230,
+        "ms": 35,
+        "avi": 0,
+        "trp": 0
+      },
+      "skills": {
+        "Monarch's Coercion": "When firing main gun: 40% (70%) chance to fire a special barrage (damage is based on skill level) and enemies hit by the barrage have their movement speed decreased by 40% for 6s.",
+        "Against the Current": "Increases own Reload by 0.6 (1) for every 1% loss in her HP. Additionally, when HP is 20% or less, heals for 3% max HP every 2s for 9s. This effect only occurs once per battle.",
+        "(Fate Simulation) Against the Current+": "Increases own Reload by 0.6 (1) for every 1% loss in her HP. Additionally, when HP is 20% or less, heals for 3% max HP every 2s for 11s. This effect only occurs once per battle.\n(Replaces \"Against the Current\") "
+      }
     },
     {
       "id": "Plan003",
@@ -109,12 +142,19 @@
       "rarity": "Super Rare",
       "type": "Heavy Cruiser",
       "affiliation": "Sakura Empire",
-      "fp": 270,
-      "hp": 4793,
-      "aa": 194,
-      "ms": 86,
-      "avi": 0,
-      "trp": 289
+      "stats": {
+        "fp": 270,
+        "hp": 4793,
+        "aa": 194,
+        "ms": 86,
+        "avi": 0,
+        "trp": 289
+      },
+      "skills": {
+        "Body and Soul": "Increases this ship's Torpedo Crit Rate by 20% (40%) and Torpedo Crit DMG by 65%. ",
+        "(Fate Simulation) Body and Soul+": "Increases this ship's Torpedo Crit Rate by 20% (40%) and Torpedo Crit DMG by 65%. Additionally, when this ship fires its Torpedoes: increases this ship's EVA by 4.5% (12%) for 6s.\n(Replaces \"Body and Soul\")",
+        "Flash of Lightning": "When this ship fires its Torpedoes: 15% (30%) chance to launch a special torpedo barrage (DMG is based on skill's level)."
+      }
     },
     {
       "id": "Plan004",
@@ -122,12 +162,19 @@
       "rarity": "Super Rare",
       "type": "Battleship",
       "affiliation": "Sakura Empire",
-      "fp": 428,
-      "hp": 8607,
-      "aa": 237,
-      "ms": 37,
-      "avi": 0,
-      "trp": 0
+      "stats": {
+        "fp": 428,
+        "hp": 8607,
+        "aa": 237,
+        "ms": 37,
+        "avi": 0,
+        "trp": 0
+      },
+      "skills": {
+        "A Legend's Inheritance": "When this ship fires its Main Guns: 40% (70%) chance to fire a special barrage (DMG is based on the skill's level).",
+        "(Fate Simulation) A Legend's Inheritance+": "When this ship fires its Main Guns: 40% (70%) chance to fire an improved special barrage. (DMG is based on the skill's level).\n(Replaces \"A Legend's Inheritance\")",
+        "Specialized Armor": "Specialized Armor"
+      }
     },
     {
       "id": "Plan005",
@@ -135,12 +182,19 @@
       "rarity": "Super Rare",
       "type": "Heavy Cruiser",
       "affiliation": "Iron Blood",
-      "fp": 283,
-      "hp": 5920,
-      "aa": 233,
-      "ms": 78,
-      "avi": 0,
-      "trp": 215
+      "stats": {
+        "fp": 283,
+        "hp": 5920,
+        "aa": 233,
+        "ms": 78,
+        "avi": 0,
+        "trp": 215
+      },
+      "skills": {
+        "Expert Loader": "Main gun property is changed to HE. When firing main gun, increases own Reload by 1% (3.5%) (Can be stacked up to 12 times). Additionally, alternates main gun property between HE and AP after every 2 rounds of main gun firing.",
+        "Well-Rounded Armor": "Every 30s: spawns 4 rotating shields that absorb 8 shots each; lasts 5s (15s).",
+        "(Fate Simulation) Well-Rounded Armor+": "At the start of battle and every 30s after that: spawns 4 rotating shields that absorb 8 shots each; lasts 5s (15s). (Replaces \"Well-Rounded Armor\") "
+      }
     },
     {
       "id": "Plan006",
@@ -148,12 +202,19 @@
       "rarity": "Super Rare",
       "type": "Heavy Cruiser",
       "affiliation": "Iris Libre",
-      "fp": 276,
-      "hp": 5363,
-      "aa": 248,
-      "ms": 80,
-      "avi": 0,
-      "trp": 226
+      "stats": {
+        "fp": 276,
+        "hp": 5363,
+        "aa": 248,
+        "ms": 80,
+        "avi": 0,
+        "trp": 226
+      },
+      "skills": {
+        "Augmented HE Ammo": "Increases this ship's DMG with HE by 15% (35%) but decreases its chance to ignite enemies by 3%.",
+        "Engine Boost": "Increases this ship's Speed by 3 (8). At the start of the battle: increases this ship's EVA by 15% (35%) for 40s. ",
+        "(Fate Simulation) Engine Boost+": "Increases this ship's Speed by 3 (8). At the start of the battle: increases this ship's EVA by 15% (35%) for 50s.\n(Replaces \"Engine Boost\")"
+      }
     },
     {
       "id": "Plan007",
@@ -161,12 +222,19 @@
       "rarity": "Super Rare",
       "type": "Light Cruiser",
       "affiliation": "Eagle Union",
-      "fp": 178,
-      "hp": 5257,
-      "aa": 365,
-      "ms": 97,
-      "avi": 0,
-      "trp": 0
+      "stats": {
+        "fp": 178,
+        "hp": 5257,
+        "aa": 365,
+        "ms": 97,
+        "avi": 0,
+        "trp": 0
+      },
+      "skills": {
+        "No-Fly Zone!": "When an enemy aircraft is shot down within the fleet's AA range: increases own Firepower and Anti-Air by 5% (15%) for 8s (does not stack). If fleet has shot down 15 or more enemy aircraft during the battle: increases own Firepower by 5% (15%) and Reload by 10% (20%) for the rest of the battle. ",
+        "(Fate Simulation) No-Fly Zone!+": "When an enemy aircraft is shot down within your fleet's Anti-Air Gun range: increases this ship's FP and AA by 5% (15%) for 8s (does not stack); if your Airspace Control of the map is at Parity or higher: this buff is immediately applied at the start of the battle and lasts until the end. Additionally, when your fleet has shot down 15 or more aircraft in one battle: increases this ship's FP and RLD by 10% (20%) until the end of the battle.\n(Replaces \"No-Fly Zone!\")",
+        "Dual Nock": "If equipped with a Main Gun in own Secondary Weapon slot: increases Anti-Air Gun Efficiency by 5% (15%). If equipped with an Anti-Air Gun in own Secondary Weapon slot: increases Main Gun Efficiency by 5% (15%). If placed in the backmost position in the Escort Fleet: decreases damage taken by self by 5% (15%)."
+      }
     },
     {
       "id": "Plan008",
@@ -174,12 +242,19 @@
       "rarity": "Super Rare",
       "type": "Battleship",
       "affiliation": "Eagle Union",
-      "fp": 436,
-      "hp": 8297,
-      "aa": 409,
-      "ms": 30,
-      "avi": 0,
-      "trp": 0
+      "stats": {
+        "fp": 436,
+        "hp": 8297,
+        "aa": 409,
+        "ms": 30,
+        "avi": 0,
+        "trp": 0
+      },
+      "skills": {
+        "Ironsight Caliber": "Decreases equipped Main Gun Spread by 3. Increases own damage dealt to Heavy Cruisers, Large Cruisers, Battlecruisers, Battleships, and Aviation Battleships by 10% (20%). ",
+        "(Fate Simulation) Ironsight Caliber+": "Decreases this ship's Main Gun Spread Range by 3 and increases own damage dealt to Heavy Cruisers, Large Cruisers, Battlecruisers, Battleships, and Aviation Battleships by 10% (20%), and also increases own damage dealt to Aircraft Carriers and Light Aircraft Carriers by 1% (10%).\n(Replaces \"Ironsight Caliber\")",
+        "Heavy Barrel Buster": "When firing Main Guns: 50% (80%) chance to fire a special barrage."
+      }
     },
     {
       "id": "Plan009",
@@ -187,12 +262,19 @@
       "rarity": "Super Rare",
       "type": "Destroyer",
       "affiliation": "Sakura Empire",
-      "fp": 86,
-      "hp": 2641,
-      "aa": 197,
-      "ms": 239,
-      "avi": 0,
-      "trp": 393
+      "stats": {
+        "fp": 86,
+        "hp": 2641,
+        "aa": 197,
+        "ms": 239,
+        "avi": 0,
+        "trp": 393
+      },
+      "skills": {
+        "Kitakaze Style - Horizon Splitter": "Main Gun's ammo type is changed to Normal with 100/100/100 (115/115/115) modifiers. If equipped with an IJN (Sakura Empire) DD Gun: increases Main Gun efficiency by 5% (15%).",
+        "Kitakaze Style - Lotus Torpedoes": "When sortieing as Lead Ship, 10s after battle starts: launches a torpedo barrage (DMG scales with levels). Whenever own torpedoes hit 10 times (excluding the ones from barrages): launches the same barrage.",
+        "(Fate Simulation) Kitakaze Style - Lotus Torpedoes+": "10s after the start of the battle: fires a special torpedo barrage (DMG scales with levels) and decreases this ship's DMG taken by 1.5% (6%) for 50s. After every 8 hits with this ship's Torpedoes (barrage torpedoes do not count): fires this same barrage.\n(Replaces \"Kitakaze Style - Lotus Torpedoes\")"
+      }
     },
     {
       "id": "Plan010",
@@ -200,12 +282,21 @@
       "rarity": "Ultra Rare",
       "type": "Large Cruiser",
       "affiliation": "Sakura Empire",
-      "fp": 307,
-      "hp": 7541,
-      "aa": 226,
-      "ms": 50,
-      "avi": 0,
-      "trp": 0
+      "stats": {
+        "fp": 307,
+        "hp": 7541,
+        "aa": 226,
+        "ms": 50,
+        "avi": 0,
+        "trp": 0
+      },
+      "skills": {
+        "Blazing Peaks": "If equipped with a high caliber Main Gun (280mm or more): increases damage dealt with Main Gun by up to 15% (25%) depending on the distance the shells travel. Also increases Burn damage dealt to enemies by 20% (50%).",
+        "Mizuho's Intuition": "Every 20s: 30% (70%) chance to increase own Evasion by 10% (20%) and Accuracy by 20% (50%) for 12s.",
+        "(Fate Simulation) Mizuho's Intuition+": "Every 20s: 50% (100%) chance to increase own Evasion by 15% (25%) and Accuracy by 20% (50%), and decreases this ship's torpedo DMG taken by 5% (15%) for 12s.\n(Replaces \"Mizuho's Intuition\" at Fate Simulation III)",
+        "Special Gunnery Training": "Every 8 times this ship fires its main guns, fire a special barrage (barrage damage scales with skill level). If equipped with the Prototype 310mm gun, increase this ship's main gun efficiency by 4.5% (12%), improve the special barrage based upon proximity to the nearest enemy, and fire it every 4 times main gun is fired instead.",
+        "(Fate Simulation) Special Gunnery Training+": "Every 8 times this ship fires its main guns, fire a special barrage (barrage damage scales with skill level). The barrage inflicts a special burn to all enemies it hits. If equipped with a high caliber Main Gun (280mm or more), increase this ship's main gun efficiency by 4.5% (12%), improve the special barrage based upon proximity to the nearest enemy, and fire it every 4 times main gun is fired instead.\n(Replaces \"Special Gunnery Training\")"
+      }
     },
     {
       "id": "Plan011",
@@ -213,12 +304,19 @@
       "rarity": "Ultra Rare",
       "type": "Battleship",
       "affiliation": "Iron Blood",
-      "fp": 449,
-      "hp": 9886,
-      "aa": 241,
-      "ms": 27,
-      "avi": 0,
-      "trp": 0
+      "stats": {
+        "fp": 449,
+        "hp": 9886,
+        "aa": 241,
+        "ms": 27,
+        "avi": 0,
+        "trp": 0
+      },
+      "srills": {
+        "Symphony of Destruction": "Upon taking damage OR when an enemy ship enters a certain range: fires a Level 1 (10) barrage that ignores the enemy's armor type (damage is based on skill level). Has a cooldown of 15s",
+        "Sonata of Chaos": "Every odd salvo increases own Reload by 30% (50%) and damage by 10% (20%) until the next salvo is fired. Every even salvo increases critical rate by 10% (20%) and critical damage by 30% (50%) until the next salvo is fired.",
+        "Rhapsody of Darkness": "When own HP is between: 100% and 70% of max HP: increases own Firepower by 10% (20%). 70% and 30% of max HP: increases own Firepower by 4% (10%) and decreases damage taken by self by 4% (10%). 30% and 1% of max HP: decreases damage taken by self by 10% (20%)"
+      }
     },
     {
       "id": "Plan012",
@@ -226,12 +324,19 @@
       "rarity": "Super Rare",
       "type": "Battleship",
       "affiliation": "Vichya Dominion",
-      "fp": 430,
-      "hp": 7863,
-      "aa": 241,
-      "ms": 36,
-      "avi": 0,
-      "trp": 0
+      "stats": {
+        "fp": 430,
+        "hp": 7863,
+        "aa": 241,
+        "ms": 36,
+        "avi": 0,
+        "trp": 0
+      },
+      "skills": {
+        "Emotion Inhibition Module": "When Health falls below 50%: increases own Evasion by 15% (30%) and recovers 2% of max HP every 2s for 8s. Can only activate twice per battle",
+        "(Fate Simulation) Emotion Inhibition Module+": "At the start of battle, if this ship's HP is greater than 50%: increases this ship's AA by 4.5% (12%) and improves this ship's Precision Salvo Protocol barrage. Additionally, when this ship's HP falls below 50%: for 8s, increases this ship's EVA by 15% (30%) and restores a total of 8% of its max HP (this effect can only be triggered twice per battle)",
+        "Precision Salvo Protocol": "This ship's main gun can be fired twice per reload cycle, and each salvo can be fired independently. This ship's damage bonus with manually-aimed salvos becomes 25% (40%). Every 20s after battle starts, 50% (100%) chance to fire a special barrage (damage scales with skill level)"
+      }
     },
     {
       "id": "Plan013",
@@ -239,12 +344,19 @@
       "rarity": "Super Rare",
       "type": "Heavy Cruiser",
       "affiliation": "Royal Navy",
-      "fp": 282,
-      "hp": 5141,
-      "aa": 409,
-      "ms": 76,
-      "avi": 0,
-      "trp": 208
+      "stats": {
+        "fp": 282,
+        "hp": 5141,
+        "aa": 409,
+        "ms": 76,
+        "avi": 0,
+        "trp": 208
+      },
+      "skills": {
+        "Grin and Fire!": "Decrease this ship's DMG taken by 5% (15%). Every 12s after the start of the battle: 50% (100%) chance to fire a special barrage (DMG is based on the skill's level)",
+        "Bounce Right Back": "Decrease the loading time of this ship's first wave of torpedoes by 40% (70%). When this ship takes DMG: 15% chance to increase this ship's FP, EVA, and AA by 1% (5%) until the end of the battle. Can be stacked up to 3 times",
+        "Bounce Right Back+": "Decreases the loading time of this ship's first 2 waves of torpedoes by 40% (70%). When this ship takes DMG: 15% chance to increase this ship's FP, EVA, and AA by 1% (5%) until the end of the battle (Effect can be stacked up to 3 times). While this ship's HP is at 80% or higher: increases this ship's Torpedo DMG by 4% (10%).(Replaces 'Bounce Right Back')"
+      }
     },
     {
       "id": "Plan014",
@@ -252,12 +364,20 @@
       "rarity": "Ultra Rare",
       "type": "Heavy Cruiser",
       "affiliation": "Royal Navy",
-      "fp": 289,
-      "hp": 5668,
-      "aa": 289,
-      "ms": 75,
-      "avi": 0,
-      "trp": 245
+      "stats": {
+        "fp": 289,
+        "hp": 5668,
+        "aa": 289,
+        "ms": 75,
+        "avi": 0,
+        "trp": 245
+      },
+      "skills": {
+        "The Fearless Privateer": "Increase this ship's built-in secondary gun's critical rate by 20% (50%) and change its ammo type to Special Normal with 100/100/100 modifiers, Shell Range 55, and Speed 200.When this ship uses a main gun that fires Normal or High Explosive ammo, change this ship's main gun ammo type to High Explosive that has a chance to inflict special Burn to enemies hit, with 115/115/95 (125/125/105) modifiers.",
+        "(Fate Simulation) The Fearless Privateer+": "Increase this ship's built-in secondary gun's critical rate by 20% (50%) and change its ammo type to Special Normal with 100/100/100 modifiers, Shell Range 55, and Speed 200.When this ship uses a main gun that fires Normal or High Explosive ammo, change this ship's main gun ammo type to High Explosive that has a chance to inflict special Burn to enemies hit, with 115/115/95 (140/140/105) modifiers.Reduces the amount of main gun fire required to trigger All Out Assault to 6.(Replaces 'The Fearless Privateer')",
+        "Flintlock Burst": "Every 30s (every 20s), fire a special barrage that ignores shields and heals this ship for 15% of the damage dealt (barrage damage scales with skill level). Additionally,If sortied as the lead vanguard ship, increase this ship's FP and EVA by 3% (15%) and RLD by 4.5% (21%).If not sortied as the lead vanguard ship, when this ship sinks an enemy ship, increase this ship's FP and EVA by 1% (5%) and RLD by 1.5% (7%) until the end of the battle. This buff can be stacked up to three times",
+        "(Fate Simulation) Flintlock Burst+": "Every 30s (every 20s), fire a special barrage that ignores shields and heals this ship for 20% of the damage dealt (barrage damage scales with skill level). Increase this ship's FP and EVA by 3% (15%) and RLD by 4.5% (21%) until the end of the battle.(Replaces 'Flintlock Burst')"
+      }
     },
     {
       "id": "Plan015",
@@ -265,12 +385,19 @@
       "rarity": "Super Rare",
       "type": "Light Cruiser",
       "affiliation": "Iron Blood",
-      "fp": 168,
-      "hp": 5262,
-      "aa": 353,
-      "ms": 75,
-      "avi": 0,
-      "trp": 193
+      "stats": {
+        "fp": 168,
+        "hp": 5262,
+        "aa": 353,
+        "ms": 75,
+        "avi": 0,
+        "trp": 193
+      },
+      "skills": {
+        "Retaliatory Shield": "Every 15s, deploy a shield in front of this ship that lasts for up to 8.0s and and can block up to 6 enemy shells. If this shield is destroyed before it expires, fire a special barrage and increase this ship's FP and Accuracy by 3.5% (8%) until the end of the battle. This buff can be stacked twice.",
+        "Ausgewogen": "At the start of the battle:If this ship is in the frontmost position of your vanguard, increase this ship's Speed by 5 and EVA by 4.5% (12%) until the end of the battle, and decrease its damage taken by 5% (15%) for the first 30s of the battle.If this ship is NOT in the frontmost position, increase this ship's critical damage by 15% (25%), and every 15s, 40% (70%) chance to fire a special barrage (damage scales with skill level)",
+        "(Fate Simulation) Ausgewogen+": "Apply all of the following buffs, regardless of this ship's position:Increase this ship's Speed by 5 and EVA by 4.5% (12%), and decrease its damage taken by 5% (15%) for the first 60s of the battle.Increase this ship's critical damage by 15% (25%).Every 15s, 40% (70%) chance to fire an enhanced special barrage (damage scales with skill level).(Replaces 'Ausgewogen')"
+      }
     },
     {
       "id": "Plan016",
@@ -278,12 +405,19 @@
       "rarity": "Super Rare",
       "type": "Battlecruiser",
       "affiliation": "Iron Blood",
-      "fp": 361,
-      "hp": 7126,
-      "aa": 338,
-      "ms": 36,
-      "avi": 0,
-      "trp": 241
+      "stats": {
+        "fp": 361,
+        "hp": 7126,
+        "aa": 338,
+        "ms": 36,
+        "avi": 0,
+        "trp": 241
+      },
+      "skills": {
+        "Mímir's Keen Eyes": "Changes this ship's position (forward 15 units) and decreases its DMG taken by 5% (20%). Every 15s: commences a sonar scan, revealing the location of all enemy SSs for 5s (10s), reducing their Accuracy by 15% (25%), and decreasing your Vanguard's DMG taken from torpedoes by 5% (15%) for 5s (10s).",
+        "Herteitr's Rolling Thunder": "Every 18s: 45% (75%) chance to fire a special barrage (DMG is based on skill's level). Changes this ship's torpedoes to parallel spread.",
+        "(Fate Simulation) Herteitr's Rolling Thunder+": "Every 18s: 45% (75%) chance to fire an improved special barrage (DMG is based on skill's level). Changes this ship's torpedoes to parallel spread.(Replaces 'Herteitr's Rolling Thunder')"
+      }
     },
     {
       "id": "Plan017",
@@ -291,12 +425,19 @@
       "rarity": "Super Rare",
       "type": "Battleship",
       "affiliation": "Iris Libre",
-      "fp": 454,
-      "hp": 6896,
-      "aa": 241,
-      "ms": 36,
-      "avi": 0,
-      "trp": 0
+      "stats": {
+        "fp": 454,
+        "hp": 6896,
+        "aa": 241,
+        "ms": 36,
+        "avi": 0,
+        "trp": 0
+      },
+      "skills": {
+        "Augmenting Mechanism: Setzer Principle": "Decreases the loading time of this ship's Main Guns by 20% (40%). When this ship fires its Main Guns: fires an additional barrage. Every 20s: fires a special barrage (DMG is based on skill's level).",
+        "(Fate Simulation) Augmenting Mechanism: Setzer Principle+": "Decreases the loading time of this ship's Main Guns by 20% (40%). When this ship fires its Main Guns: fires an additional barrage (this barrage is improved and unaffected by this ship's position). Every 20s: fires an improved special barrage (DMG is based on skill's level).(Replaces 'Augmenting Mechanism: Setzer Principle')",
+        "Substitute Mechanism: Holy Thurible": "When this ship uses a HE Main Gun: increases this ship's FP by 1% (5%), AA by 5% (15%), and increases that Main Gun's armor modifier against Heavy armor by 5% (15%).When this ship uses an AP Main Gun: increases this ship's FP by 1% (5%), RLD by 5% (15%), and increases its Main Gun Crit Rate by 5% (20%).While this ship is above 75% HP: absorbs 50% of the DMG your Flagship takes (does nothing if this ship is the Flagship); when this ship's HP falls below 75%: increases this ship's EVA and Accuracy by 5% (15%)."
+      }
     },
     {
       "id": "Plan018",
@@ -304,12 +445,19 @@
       "rarity": "Super Rare",
       "type": "Heavy Cruiser",
       "affiliation": "Eagle Union",
-      "fp": 252,
-      "hp": 6256,
-      "aa": 227,
-      "ms": 80,
-      "avi": 0,
-      "trp": 215
+      "stats": {
+        "fp": 252,
+        "hp": 6256,
+        "aa": 227,
+        "ms": 80,
+        "avi": 0,
+        "trp": 215
+      },
+      "skills": {
+        "Riddle Me This": "Increases this ship's EVA by 5% (15%). When this ship fires its Torpedoes: 45% (75%) chance to fire a special barrage (DMG is based on skill's level); If this barrage fails to activate: decreases the loading time of this ship's next wave of Torpedoes by 3s.",
+        "(Fate Simulation) Riddle Me This+": "Increases this ship's EVA by 5% (15%). When this ship fires her Torpedoes: 45% (75%) chance to fire an improved special barrage (DMG is based on the skill's level); If this barrage fails to activate: decreases the loading time of this ship's next wave of Torpedoes by 3s.",
+        "Hide and Seek": "When this ship fires its Torpedoes: deploys a smokescreen and a barrier onto this ship. This smokescreen lasts 5s and increases Evasion Rate by 20% (40%) for all ships inside it (does not stack with other smokescreen skills). The barrier lasts 5s and can absorb DMG up to 1.5% (6%) of this ship's max HP. If this barrier is destroyed before it expires: increases this ship's Evasion Rate to 100% for 2s"
+      }
     },
     {
       "id": "Plan019",
@@ -317,12 +465,19 @@
       "rarity": "Ultra Rare",
       "type": "Aircraft Carrier",
       "affiliation": "Sakura Empire",
-      "fp": 0,
-      "hp": 8354,
-      "aa": 323,
-      "ms": 57,
-      "avi": 453,
-      "trp": 0
+      "stats": {
+        "fp": 0,
+        "hp": 8354,
+        "aa": 323,
+        "ms": 57,
+        "avi": 453,
+        "trp": 0
+      },
+      "skills": {
+        "Sky-Rending Retribution": "When this ship launches an Airstrike: 50% (100%) chance to launch an additional special airstrike (DMG is based on skill's level).(Special airstrike includes lightning strikes that cause all hit enemies to take 8% more DMG for 7s.)",
+        "Flame-Anointed Conquest": "If this ship is equipped with a Fighter: fires a special barrage every 12s; Otherwise, fire a slashing barrage every time this ship launches an Airstrike. Both barrages' DMG is based on skill's level.",
+        "The Great One's Shadow": "If this ship is equipped with a Sakura Empire aircraft: increases this ship's AVI and Accuracy by 5% (15%); If not equipped with any Sakura Empire aircraft: increases this ship's AA and Accuracy by 5% (15%) instead."
+      }
     },
     {
       "id": "Plan020",
@@ -330,12 +485,19 @@
       "rarity": "Ultra Rare",
       "type": "Large Cruiser",
       "affiliation": "Iron Blood",
-      "fp": 282,
-      "hp": 7877,
-      "aa": 252,
-      "ms": 52,
-      "avi": 0,
-      "trp": 202
+      "stats": {
+        "fp": 282,
+        "hp": 7877,
+        "aa": 252,
+        "ms": 52,
+        "avi": 0,
+        "trp": 202
+      },
+      "skills": {
+        "Engulfer of the Golden Vortex": "When this ship's torpedoes hit an enemy, decrease that enemy's Speed by 30% (60%) for 5s. As long as this ship is not Out of Ammo, increase this ship's EVA by 5% (15%).",
+        "Abyssal Banquet": "If this ship is equipped with a Normal or AP main gun, decrease this ship's damage taken by 5% (15%) and increase this ship's critical rate by 4.5% (12%).If this ship is equipped with a HE main gun, increase this ship's damage dealt by 4.5% (12%), but her main gun loses the ability to ignite enemies.If this ship is equipped with a high-caliber main gun (280mm or higher), increase this ship's main gun efficiency by 4.5% (12%). [This bonus stacks with the other effects listed in this skill.)",
+        "Jöttun's Jaws": "When this ship fires its main gun, if there are no enemies nearby(range 35), inflict Armor Break to all enemies hit by the main gun shells. Once every 8 times this ship fires its main gun, fire a special barrage (damage scales with skill level). If this ship is equipped with a high-caliber main gun (280mm or higher), fire this barrage every 4 times the ship fires its main guns instead of 8."
+      }
     },
     {
       "id": "Plan021",
@@ -343,12 +505,20 @@
       "rarity": "Super Rare",
       "type": "Aircraft Carrier",
       "affiliation": "Iron Blood",
-      "fp": 0,
-      "hp": 7238,
-      "aa": 327,
-      "ms": 47,
-      "avi": 430,
-      "trp": 0
+      "stats": {
+        "fp": 0,
+        "hp": 7238,
+        "aa": 327,
+        "ms": 47,
+        "avi": 430,
+        "trp": 0
+      },
+      "skills": {
+        "Hex-Principle of Insight": "When this ship launches an airstrike, 45% (75%) chance to inflict 234 damage to all enemies, and gradually decrease their speed to 0 over the next 2.5s. Enemies remain at 0 speed for an additional 1s, after which this debuff expires and their speed returns to normal.",
+        "(Fate Simulation) Hex-Principle of Insight+": "When this ship launches an airstrike, 50% (100%) chance to inflict 234 damage to all enemies, and gradually decrease their speed to 0 over the next 2.5s. Enemies remain at 0 speed for an additional 1.5s, after which this debuff expires and their speed returns to normal.",
+        "Hex-Principle of Shattering": "When this ship launches an airstrike, launch an aerial barrage (barrage damage scales with skill level). Light and medium armor enemies hit by this barrage take 8% more aviation damage for 5s.",
+        "Hex-Principle of Dominance": "Increase this ship's damage dealt to CLs and CAs by 10% (20%). If this ship is equipped with at least one Iron Blood aircraft, increase this ship's AVI and RLD by 4.5% (12%) and Fighter efficiency by 1% (10%)."
+      }
     },
     {
       "id": "Plan022",
@@ -356,12 +526,20 @@
       "rarity": "Super Rare",
       "type": "Battleship",
       "affiliation": "Sardegna Empire",
-      "fp": 432,
-      "hp": 8422,
-      "aa": 258,
-      "ms": 40,
-      "avi": 0,
-      "trp": 0
+      "stats": {
+        "fp": 432,
+        "hp": 8422,
+        "aa": 258,
+        "ms": 40,
+        "avi": 0,
+        "trp": 0
+      },
+      "skills": {
+        "Legendary Voyage": "When this ship has the Out of Ammo debuff: decreases the DMG penalty's effect by 5% (15%). When this ship fires her Main Guns: 45% (75%) chance to fire a frontal barrage (DMG is based on skill's level); If this barrage fails to activate: heals this ship for 5% of her max HP.",
+        "Il Milione": "If there is at least 1 other Sardegna Empire ship in your fleet: decreases this ship's DMG taken by 6% (20%). At the start of the battle, if the frontmost ship in your Vanguard is a Sardegna Empire ship: increases this ship's Main Gun efficiency by 1% (10%) and AA Gun efficiency by 50%; otherwise, spawns 2 shields around that ship that can block 3 enemy torpedoes.",
+        "(Fate Simulation) Il Milione+": "If there is at least 1 other ship in the Main Fleet: decreases this ship's DMG taken by 6% (20%), and increases her Main Gun Efficiency by 5% (15%) and AA gun efficiency by 50% . At the start of the battle, spawns 2 shields around the frontmost ship of your Vanguard that can block 3 enemy torpedoes each. Improves the barrage fired by this ship's 'Legendary Voyage' skill; if the ship is sortied as the Flagship, increase the barrage's activation chance by 10%. If this ship is NOT sortied as the Flagship, increase the amount of max HP healed by 'Legendary Voyage' to 8%.",
+        "Untold Tales": "During a sortie, whenever the fleet this ship is in sinks an enemy fleet: increase this ship's AA and EVA by 5.0% (can be stacked up to 3 times). While this ship is afloat, the following effects are applied to the fleet this ship is NOT in:For the 1st and 2nd battle: launches a supporting barrage 20s after battle starts (damage is based on skill level).For the 3rd and 4th battle: decreases damage taken by 3.5% (8%) for all Sardegna Empire ships in that fleet."
+      }
     }
   ]
 }

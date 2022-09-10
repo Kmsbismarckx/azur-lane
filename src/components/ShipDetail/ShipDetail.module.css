@@ -1,0 +1,9 @@
+.ship__detail {
+  display: flex;
+  align-items: center;
+}
+.ship__detail img {
+  width: 30px;
+}
+
+/*# sourceMappingURL=ShipDetail.module.css.map */

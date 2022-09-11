@@ -21,7 +21,7 @@ const SkillShip = ({ ship }) => {
         alt={ship.name}
       />
       {names.map((name, index) => (
-        <div className={classes.ship__item_description} key={ship.id}>
+        <div className={classes.ship__item_description} key={name}>
           <h1>{name}</h1>
           <div className={classes.ship__item_skill_description}>
             <img

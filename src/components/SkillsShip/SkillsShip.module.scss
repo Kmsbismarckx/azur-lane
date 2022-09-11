@@ -1,0 +1,23 @@
+.ship__item {
+  width: 90%;
+  margin: 0 auto;
+  .ship__item_name {
+    margin-bottom: 50px;
+  }
+  .ship__item_description {
+    margin-bottom: 30px;
+  }
+  .ship__item_img {
+    max-width: 530px;
+    width: 100%;
+  }
+  .ship__item_skill_description {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 20%);
+    padding: 15px;
+    .ship__item_skill {
+      margin-right: 30px;
+    }
+  }
+}

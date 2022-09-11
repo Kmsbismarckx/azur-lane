@@ -20,6 +20,7 @@ const Ship = ({ ship, onClick, setCurrentShip }) => {
           onClick={() => {
             onClick();
             setCurrentShip({
+              id: ship.id,
               name: ship.name,
               imgURL: shipImgURL,
               type: ship.type,

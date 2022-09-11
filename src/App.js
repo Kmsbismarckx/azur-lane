@@ -10,13 +10,8 @@ import About from "./pages/About";
 import Ships from "./pages/Ships";
 import Header from "./components/Header/Header";
 import Error from "./pages/Error";
-import { HeaderContext } from "./context";
-import prototypeShipsData from "./prototypeShips.json";
 
 function App() {
-  const prototypeShips = prototypeShipsData["prototypes"];
-  const [ships, setShips] = useState(prototypeShips);
-  const [aboutShip, setAboutShip] = useState({});
   function Redirect({ to }) {
     let navigate = useNavigate();
     useEffect(() => {
@@ -29,16 +24,14 @@ function App() {
     <div>
       <Router>
         <Header />
-        <HeaderContext.Provider
-          value={{ ships, setShips, aboutShip, setAboutShip }}
-        >
-          <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/ships" element={<Ships />} />
-            <Route path="/error" element={<Error />} />
-            <Route path="*" element={<Redirect to="/error" />}></Route>
-          </Routes>
-        </HeaderContext.Provider>
+        <Routes>
+          <Route path="/" element={<Ships />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/ships/:id" element={<About />} />
+          <Route path="/ships" element={<Ships />} />
+          <Route path="/error" element={<Error />} />
+          {/*<Route path="*" element={<Redirect to="/error" />}></Route>*/}
+        </Routes>
       </Router>
     </div>
   );

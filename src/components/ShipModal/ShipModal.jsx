@@ -1,18 +1,17 @@
-import React, { useContext } from "react";
+import React from "react";
 import classes from "./ShipModal.module.css";
 import ShipDetail from "../ShipDetail/ShipDetail";
 import { Link } from "react-router-dom";
-import { HeaderContext } from "../../context";
+import { useDispatch } from "react-redux";
 
 const MyModal = ({ visible, setVisible, currentShip }) => {
   const urlPreFix = process.env.PUBLIC_URL;
   const rootClasses = [classes.shipModal];
 
-  const { aboutShips, setAboutShip } = useContext(HeaderContext);
-
   if (visible) {
     rootClasses.push(classes.shipModalActive);
   }
+  console.log(currentShip);
 
   return (
     <div
@@ -119,14 +118,7 @@ const MyModal = ({ visible, setVisible, currentShip }) => {
             </div>
           </div>
           <div>
-            <Link
-              to="/about"
-              onClick={() => {
-                return setAboutShip({ ...currentShip });
-              }}
-            >
-              About
-            </Link>
+            <Link to={`/ships/${currentShip.id}`}>About</Link>
           </div>
         </div>
       </div>

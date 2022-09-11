@@ -1,7 +1,7 @@
 {
   "prototypes": [
     {
-      "id": 20023,
+      "id": 1,
       "name": "Plymouth",
       "rarity": "Ultra Rare",
       "type": "Light Cruiser",
@@ -20,7 +20,7 @@
       }
     },
     {
-      "id": 20024,
+      "id": 2,
       "name": "Prinz Rupprecht",
       "rarity": "Super Rare",
       "type": "Battlecruiser",
@@ -39,7 +39,7 @@
       }
     },
     {
-      "id": 20025,
+      "id": 3,
       "name": "Harbin",
       "rarity": "Super Rare",
       "type": "Light Cruiser",
@@ -58,7 +58,7 @@
       }
     },
     {
-      "id": 20026,
+      "id": 4,
       "name": "Chkalov",
       "rarity": "Super Rare",
       "type": "Aircraft Carrier",
@@ -77,12 +77,12 @@
       }
     },
     {
-      "id": 20027,
+      "id": 5,
       "name": "Brest",
       "rarity": "Ultra Rare",
       "type": "Large Cruiser",
       "affiliation": "Iris Libre",
-      "start": {
+      "stats": {
         "fp": 299,
         "hp": 7354,
         "aa": 254,
@@ -97,7 +97,7 @@
       }
     },
     {
-      "id": "Plan001",
+      "id": 6,
       "name": "Neptune",
       "rarity": "Super Rare",
       "type": "Light Cruiser",
@@ -117,7 +117,7 @@
       }
     },
     {
-      "id": "Plan002",
+      "id": 7,
       "name": "Monarch",
       "rarity": "Super Rare",
       "type": "Battleship",
@@ -137,7 +137,7 @@
       }
     },
     {
-      "id": "Plan003",
+      "id": 8,
       "name": "Ibuki",
       "rarity": "Super Rare",
       "type": "Heavy Cruiser",
@@ -157,7 +157,7 @@
       }
     },
     {
-      "id": "Plan004",
+      "id": 9,
       "name": "Izumo",
       "rarity": "Super Rare",
       "type": "Battleship",
@@ -177,7 +177,7 @@
       }
     },
     {
-      "id": "Plan005",
+      "id": 10,
       "name": "Roon",
       "rarity": "Super Rare",
       "type": "Heavy Cruiser",
@@ -197,7 +197,7 @@
       }
     },
     {
-      "id": "Plan006",
+      "id": 11,
       "name": "Saint Louis",
       "rarity": "Super Rare",
       "type": "Heavy Cruiser",
@@ -217,7 +217,7 @@
       }
     },
     {
-      "id": "Plan007",
+      "id": 12,
       "name": "Seattle",
       "rarity": "Super Rare",
       "type": "Light Cruiser",
@@ -237,7 +237,7 @@
       }
     },
     {
-      "id": "Plan008",
+      "id": 13,
       "name": "Georgia",
       "rarity": "Super Rare",
       "type": "Battleship",
@@ -257,7 +257,7 @@
       }
     },
     {
-      "id": "Plan009",
+      "id": 14,
       "name": "Kitakaze",
       "rarity": "Super Rare",
       "type": "Destroyer",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "id": "Plan010",
+      "id": 15,
       "name": "Azuma",
       "rarity": "Ultra Rare",
       "type": "Large Cruiser",
@@ -299,7 +299,7 @@
       }
     },
     {
-      "id": "Plan011",
+      "id": 16,
       "name": "Friedrich der Große",
       "rarity": "Ultra Rare",
       "type": "Battleship",
@@ -319,7 +319,7 @@
       }
     },
     {
-      "id": "Plan012",
+      "id": 17,
       "name": "Gascogne",
       "rarity": "Super Rare",
       "type": "Battleship",
@@ -339,7 +339,7 @@
       }
     },
     {
-      "id": "Plan013",
+      "id": 18,
       "name": "Cheshire",
       "rarity": "Super Rare",
       "type": "Heavy Cruiser",
@@ -359,7 +359,7 @@
       }
     },
     {
-      "id": "Plan014",
+      "id": 19,
       "name": "Drake",
       "rarity": "Ultra Rare",
       "type": "Heavy Cruiser",
@@ -380,7 +380,7 @@
       }
     },
     {
-      "id": "Plan015",
+      "id": 20,
       "name": "Mainz",
       "rarity": "Super Rare",
       "type": "Light Cruiser",
@@ -400,7 +400,7 @@
       }
     },
     {
-      "id": "Plan016",
+      "id": 21,
       "name": "Odin",
       "rarity": "Super Rare",
       "type": "Battlecruiser",
@@ -420,7 +420,7 @@
       }
     },
     {
-      "id": "Plan017",
+      "id": 22,
       "name": "Champagne",
       "rarity": "Super Rare",
       "type": "Battleship",
@@ -434,13 +434,13 @@
         "trp": 0
       },
       "skills": {
-        "Augmenting Mechanism: Setzer Principle": "Decreases the loading time of this ship's Main Guns by 20% (40%). When this ship fires its Main Guns: fires an additional barrage. Every 20s: fires a special barrage (DMG is based on skill's level).",
-        "(Fate Simulation) Augmenting Mechanism: Setzer Principle+": "Decreases the loading time of this ship's Main Guns by 20% (40%). When this ship fires its Main Guns: fires an additional barrage (this barrage is improved and unaffected by this ship's position). Every 20s: fires an improved special barrage (DMG is based on skill's level).(Replaces 'Augmenting Mechanism: Setzer Principle')",
-        "Substitute Mechanism: Holy Thurible": "When this ship uses a HE Main Gun: increases this ship's FP by 1% (5%), AA by 5% (15%), and increases that Main Gun's armor modifier against Heavy armor by 5% (15%).When this ship uses an AP Main Gun: increases this ship's FP by 1% (5%), RLD by 5% (15%), and increases its Main Gun Crit Rate by 5% (20%).While this ship is above 75% HP: absorbs 50% of the DMG your Flagship takes (does nothing if this ship is the Flagship); when this ship's HP falls below 75%: increases this ship's EVA and Accuracy by 5% (15%)."
+        "Augmenting Mechanism Setzer Principle": "Decreases the loading time of this ship's Main Guns by 20% (40%). When this ship fires its Main Guns: fires an additional barrage. Every 20s: fires a special barrage (DMG is based on skill's level).",
+        "(Fate Simulation) Augmenting Mechanism Setzer Principle+": "Decreases the loading time of this ship's Main Guns by 20% (40%). When this ship fires its Main Guns: fires an additional barrage (this barrage is improved and unaffected by this ship's position). Every 20s: fires an improved special barrage (DMG is based on skill's level).(Replaces 'Augmenting Mechanism: Setzer Principle')",
+        "Substitute Mechanism Holy Thurible": "When this ship uses a HE Main Gun: increases this ship's FP by 1% (5%), AA by 5% (15%), and increases that Main Gun's armor modifier against Heavy armor by 5% (15%).When this ship uses an AP Main Gun: increases this ship's FP by 1% (5%), RLD by 5% (15%), and increases its Main Gun Crit Rate by 5% (20%).While this ship is above 75% HP: absorbs 50% of the DMG your Flagship takes (does nothing if this ship is the Flagship); when this ship's HP falls below 75%: increases this ship's EVA and Accuracy by 5% (15%)."
       }
     },
     {
-      "id": "Plan018",
+      "id": 23,
       "name": "Anchorage",
       "rarity": "Super Rare",
       "type": "Heavy Cruiser",
@@ -460,7 +460,7 @@
       }
     },
     {
-      "id": "Plan019",
+      "id": 24,
       "name": "Hakuryuu",
       "rarity": "Ultra Rare",
       "type": "Aircraft Carrier",
@@ -480,7 +480,7 @@
       }
     },
     {
-      "id": "Plan020",
+      "id": 25,
       "name": "Ägir",
       "rarity": "Ultra Rare",
       "type": "Large Cruiser",
@@ -500,7 +500,7 @@
       }
     },
     {
-      "id": "Plan021",
+      "id": 26,
       "name": "August von Parseval",
       "rarity": "Super Rare",
       "type": "Aircraft Carrier",
@@ -521,7 +521,7 @@
       }
     },
     {
-      "id": "Plan022",
+      "id": 27,
       "name": "Marco Polo",
       "rarity": "Super Rare",
       "type": "Battleship",

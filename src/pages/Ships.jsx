@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Slider from "../components/Slider/Slider";
 import ShipList from "../components/ShipList/ShipList";
 import ShipModal from "../components/ShipModal/ShipModal";
@@ -6,9 +6,10 @@ import { useShips } from "../hooks/useShips";
 import React from "react";
 import prototypeShipsData from "../prototypeShips.json";
 import { HeaderContext } from "../context";
+import { useDispatch, useSelector } from "react-redux";
 
 function Ships() {
-  const { ships, setShips } = useContext(HeaderContext);
+  const ships = useSelector((state) => state.shipsReducer.ships);
 
   const [filter, setFilter] = useState({
     sort: "",
@@ -25,6 +26,11 @@ function Ships() {
 
   const [modal, setModal] = useState(false);
   const [currentShip, setCurrentShip] = useState({ rarity: "", name: "" });
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch({ type: "SET_SHIPS", payload: ships });
+  }, []);
 
   return (
     <div className="App">
